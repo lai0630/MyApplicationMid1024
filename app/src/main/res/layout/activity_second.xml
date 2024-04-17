@@ -4,6 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#15080C"
     tools:context=".SecondActivity">
+
+  <ImageView
+      android:id="@+id/imgPizza"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:alpha="0.5"
+      android:background="#00510B0B"
+      android:src="@drawable/pizza"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/pizza" />
+
+  <TextView
+      android:id="@+id/txtHeader"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:text="點餐"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="48sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/txtStaple"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="172dp"
+      android:text="主食"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/txtStapleName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:text="TextView"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/txtStaple"
+      app:layout_constraintStart_toEndOf="@+id/txtStaple"
+      app:layout_constraintTop_toTopOf="@+id/txtStaple"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <TextView
+      android:id="@+id/txtDrinkName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:text="TextView"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/txtDrink"
+      app:layout_constraintStart_toEndOf="@+id/txtDrink"
+      app:layout_constraintTop_toTopOf="@+id/txtDrink"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/txtFriesName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:hint="點心"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/txtSnack"
+      app:layout_constraintStart_toEndOf="@+id/txtSnack"
+      app:layout_constraintTop_toTopOf="@+id/txtSnack"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/txtSnack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="420dp"
+      android:text="點心"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/txtDrink"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/txtTotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="568dp"
+      android:text="總金額"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/txtSnack"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/txtTot"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="72dp"
+      android:text="TextView"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/txtTotal"
+      app:layout_constraintStart_toEndOf="@+id/txtTotal"
+      app:layout_constraintTop_toTopOf="@+id/txtTotal"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <TextView
+      android:id="@+id/txtDrink"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="280dp"
+      android:text="飲料"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#B55F5F"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/txtStaple"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnOrder"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="664dp"
+      android:backgroundTint="#9F4C4C"
+      android:text="點餐"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#472828"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.869"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:strokeColor="#FAFAFA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
