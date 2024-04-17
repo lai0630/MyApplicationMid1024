@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15080C"
+    android:background="#000000"
     tools:context=".SecondActivity">
 
   <ImageView
@@ -18,18 +18,26 @@
       app:layout_constraintTop_toTopOf="parent"
       app:srcCompat="@drawable/pizza" />
 
+  <View
+      android:id="@+id/view"
+      android:layout_width="500dp"
+      android:layout_height="110dp"
+      android:background="#000000"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
   <TextView
       android:id="@+id/txtHeader"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="28dp"
+      android:layout_marginTop="8dp"
       android:text="點餐"
       android:textColor="#FFFFFF"
       android:textColorLink="#B55F5F"
       android:textSize="48sp"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintHorizontal_bias="0.469"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,7 +90,6 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="60dp"
-      android:hint="點心"
       android:textColor="#FFFFFF"
       android:textColorLink="#B55F5F"
       android:textSize="34sp"
